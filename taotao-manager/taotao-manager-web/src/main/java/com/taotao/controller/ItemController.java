@@ -23,6 +23,7 @@ private final Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss")
 public String getItemById(@PathVariable long itemId){
 	TbItem tbItem = itemService.getItemById(itemId);
 	System.out.println(tbItem.getTitle());
+	System.out.println("testOnefiles");
 	return gson.toJson(tbItem);
 }
 }
